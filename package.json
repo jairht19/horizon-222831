@@ -1,0 +1,28 @@
+{
+  "name": "horizon-222831-theme",
+  "displayName": "Horizon 222831 Theme",
+  "description": "VS Code dark theme based on #222831 with #F2F2F2 accent and coral/yellow/green/blue highlights.",
+  "icon": "img/icon.png",
+  "version": "0.0.1",
+  "publisher": "jhdez",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Horizon Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-222831-color-theme.json"
+      },
+      {
+        "label": "Horizon Light",
+        "uiTheme": "vs",
+        "path": "./themes/light-222831-color-theme.json"
+      }
+    ]
+  }
+}
