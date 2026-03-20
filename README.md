@@ -1,24 +1,20 @@
-# Horizon 222831 Themes for VS Code
+# Horizon 222831 Theme for VS Code
 
-Color themes for Visual Studio Code built around:
+Horizon 222831 is a paired dark/light theme set for Visual Studio Code built around the `#222831` palette. It aims for strong code readability, cleaner semantic grouping, and a workbench that feels cohesive instead of overly decorated.
 
-- Base: `#222831`
-- Accent: `#F2F2F2`
-- Highlights: `#FF6B6B`, `#FFD93D`, `#6BCB77`, `#4D96FF`
+This extension includes:
 
-This extension includes two variants:
-
-- `Dark 222831`
-- `Light 222831`
+- `Horizon 222831 Dark`
+- `Horizon 222831 Light`
 
 ![222831 Icon](./img/icon.png)
 
-## Why this theme?
+## Design goals
 
-- High readability for long coding sessions.
-- Better token separation for real-world code (`const/let/var`, `function`, `return`, properties, parameters).
-- Semantic highlighting enabled for smarter color mapping by language.
-- Balanced UI contrast: clean panels, visible tabs, non-distracting borders.
+- Clear token separation for everyday coding: declarations, flow keywords, functions, parameters, properties, and types.
+- Consistent semantic and TextMate token behavior to reduce color drift across languages.
+- Balanced UI contrast across tabs, panels, terminal, minimap, breadcrumbs, peek views, and notifications.
+- Low-noise editor chrome with enough emphasis for focus states and diagnostics.
 
 ## Palette
 
@@ -39,28 +35,22 @@ This extension includes two variants:
 ## Install (Local Development)
 
 1. Open this project in VS Code.
-2. Press `F5` to run the extension host.
-3. In the new window, open Command Palette:
-   - `Preferences: Color Theme`
-4. Select:
-   - `Dark 222831` or
-   - `Light 222831`
+2. Press `F5` to launch an Extension Development Host.
+3. Open `Preferences: Color Theme`.
+4. Select `Horizon 222831 Dark` or `Horizon 222831 Light`.
 
 ## Install from VSIX
 
-1. Package the extension:
+1. Run:
 
    ```bash
    vsce package
    ```
 
-2. In VS Code:
-   - `Extensions: Install from VSIX...`
-3. Select the generated `.vsix`.
+2. In VS Code, run `Extensions: Install from VSIX...`.
+3. Choose the generated `.vsix` file.
 
-## Recommended font setup (MonoLisa)
-
-For best visual balance with this theme:
+## Recommended editor settings
 
 ```json
 {
@@ -71,18 +61,8 @@ For best visual balance with this theme:
 }
 ```
 
-## Project structure
-
-```text
-.
-├── icon.png
-├── package.json
-└── themes
-    ├── dark-222831-color-theme.json
-    └── light-222831-color-theme.json
-```
-
 ## Notes
 
-- If theme changes do not appear immediately, run `Developer: Reload Window`.
-- If using VSIX, repackage and reinstall after each change.
+- If changes do not appear immediately, run `Developer: Reload Window`.
+- After updating the extension, repackage and reinstall the VSIX.
+- Add screenshots of real code samples before publishing to the Marketplace. Theme pages convert much better with previews than with palette tables alone.
